@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: sequelize
+    versions:
+    - 6.5.0
+    - 6.6.1
+  - dependency-name: ini
+    versions:
+    - 1.3.7
